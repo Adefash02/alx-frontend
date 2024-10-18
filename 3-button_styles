@@ -1,0 +1,6 @@
+.btn-outline-light:hover {
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    border-radius: 1px;
+    color: #FF00FF;
+}
