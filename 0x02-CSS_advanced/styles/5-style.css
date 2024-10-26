@@ -24,9 +24,6 @@ html {
     font-size: 62.5%;
 }
 
-
-/* Set body font size to font-size-medium and apply font-family */
-
 body {
     color: var(--text-color);
     font-family: var(--font-family-base);
