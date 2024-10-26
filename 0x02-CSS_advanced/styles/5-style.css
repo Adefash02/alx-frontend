@@ -1,15 +1,13 @@
-/* Define custom properties for font sizes on the root element */
+/* Set up custom properties on the root */
 
 :root {
     --color-primary: #d73953;
     --color-black: #090909;
-    --color-white: #ffffff;
-    --color-light-grey: #f3f3f3;
-    --color-dark-grey: #353535;
     --text-color: var(--color-black);
+    /* Font-family custom properties */
     --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    /* New font-size properties */
+    --font-family-title: var(--font-family-base);
+    /* Font size properties */
     --font-size-small: 1.2rem;
     --font-size-medium: 1.6rem;
     --font-size-large: 1.8rem;
@@ -18,20 +16,22 @@
 }
 
 
-/* Set font size of html element to 62.5% */
+/* Set base font size for html and body */
 
 html {
     font-size: 62.5%;
+    /* Scales fonts to be based on 10px for easy rem conversion */
 }
 
 body {
     color: var(--text-color);
     font-family: var(--font-family-base);
     font-size: var(--font-size-medium);
+    /* Main font size */
 }
 
 
-/* Section headings set to font-family-title */
+/* Set heading fonts to title font-family */
 
 h1,
 h2,
@@ -43,7 +43,7 @@ h6 {
 }
 
 
-/* Additional styles if needed */
+/* Minimal styles for other elements */
 
 a {
     color: var(--text-color);
@@ -53,10 +53,8 @@ a {
     display: none;
 }
 
-.card-category {
-    color: var(--color-primary);
-}
-
+.card-category,
 .section-tagline {
     color: var(--color-primary);
+    /* Use primary color for category and tagline */
 }
